@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+function meditate() {
+  var breathe = true
+  var loop = setInterval(function(){ 
+    if (breathe) {
+      console.log("breathe in")
+    }
+    else {
+      console.log("breathe out")
+    }
+    breathe = !breathe
+  }, 3000);
+  clearInterval(loop);
+  console.log("hi")
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={meditate()}>Try it</button>
+      <div className="dot">
+        turtle
+      </div>
     </div>
   );
 }
