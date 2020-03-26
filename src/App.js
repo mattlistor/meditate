@@ -13,7 +13,7 @@ function meditate() {
     breathe = !breathe
   }, 3000);
   clearInterval(loop);
-  console.log("hi")
+  console.log("turtle")
 }
 
 function App() {
