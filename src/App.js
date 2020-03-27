@@ -8,7 +8,7 @@ function meditate() {
       console.log("breathe in")
     }
     else {
-      console.log("breathe out")
+      console.log("breathe OUT")
     }
     breathe = !breathe
   }, 3000);
